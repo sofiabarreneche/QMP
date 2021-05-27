@@ -18,7 +18,9 @@ public class Usuario {
   public void deshacerSolicitud(Solicitud soli) {
     miGuardarropas.deshacerSolicitud(soli);
   }
-
+  public void hacerModificacion(Solicitud soli){
+    miGuardarropas.hacerModificacion(soli);
+  }
 
 
 }
