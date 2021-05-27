@@ -1,4 +1,5 @@
 package CarpetaPrenda;
+import CarpetaPrenda.Trama;
 
 import java.awt.*;
 
@@ -8,6 +9,7 @@ public class Prenda {
   private TipoMaterial tipomaterial;
   private Color colorSecundario;
   private Trama trama;
+  private Caracteristicas carac;
 
   public Prenda(TipoPrenda tipoPrenda, TipoMaterial material, Color color, Trama trama) {
     this.tipoDeLaPrenda = tipoPrenda;
@@ -26,5 +28,9 @@ public class Prenda {
 
   public boolean sePuedeUsarSegunClima(Integer temperatura){
     return tipoDeLaPrenda.estaDentroDeTempAdecuada(temperatura);
+  }
+
+  public Caracteristicas getCarac() {
+    return carac;
   }
 }

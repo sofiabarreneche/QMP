@@ -1,5 +1,5 @@
 package CarpetaPrenda;
-
+import CarpetaPrenda.TipoMaterial;
 
 import java.awt.*;
 import java.util.Arrays;

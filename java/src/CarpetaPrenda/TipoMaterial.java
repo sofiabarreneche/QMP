@@ -1,5 +1,5 @@
 package CarpetaPrenda;
 
 public enum TipoMaterial {
-  ALGODON,LANA,CUERO,LYCRA,JEAN;
+  ALGODON,LANA,CUERO,LYCRA,JEAN
 }
