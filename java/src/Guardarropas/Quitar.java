@@ -2,7 +2,7 @@ package Guardarropas;
 import CarpetaPrenda.Prenda;
 
 
-public class Sacar implements Solicitud {
+public class Quitar implements Solicitud {
     private Prenda prenda;
     private Guardarropa guardarropa;
     public void implementarSegunSolicitud(Guardarropa guardarropa) {
