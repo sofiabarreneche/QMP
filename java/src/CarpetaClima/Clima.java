@@ -1,11 +1,11 @@
 package CarpetaClima;
-
 import java.util.List;
 import java.util.Map;
 
 public class Clima {
-  AccuWeatherApi apiClima = new AccuWeatherApi();
-  List<Map<String, Object>> condicionesClimaticas;
+  private AccuWeatherApi apiClima = new AccuWeatherApi();
+  private List<Map<String, Object>> condicionesClimaticas;
+
 
   public Integer condicionesClimaticas(){
     return (Integer) condicionesClimaticas.get(0).get("Temperature");
@@ -14,6 +14,11 @@ public class Clima {
     apiClima.getWeather("Buenos Aires, Argentina");
   }
 
-//Los dos ultimos requerimientos no los se hacer
+  public List<String> getAlertas() {
+    Map<String, Object> alertas = apiClima.getAlertas("Buenos Aires");
+    return (List<String>) alertas.get("CurrentAlerts");
+  }
+
+
 
 }
